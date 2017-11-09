@@ -8,7 +8,7 @@ html{padding:0;margin:0;border:0;}
 #main{background:url("img/bg.jpg") top center no-repeat;height:auto;}
 
 #wrap_inner{width:1199px; margin:0 auto;}
-#inner{margin:0 auto;width:1011px;}
+.myinner{margin:0 auto;width:1011px;}
 
 #logobox{display: block;position:relative;height: 82px;}
 #logo{background:#551213;padding:15px 20px 15px 200em;left:-200em; display: inline-block;position: absolute;margin-top: 35px;border-radius: 0 5px 5px 0; -webkit-border-radius: 0 5px 5px 0;}
@@ -35,7 +35,8 @@ footer a.terms{font-size:80%;color:#fff;}
 
 @media screen and (max-width: 480px){
 	#logo{padding:15px 20px 15px 10em;left:-7em;}
-    #wrap_inner,#inner{width:98%;}
+	#wrap_inner{width:98%;}
+	.myinner{width:98%;}
 	h1{font-size:7em;}
 	span.h1span {font-size: 0.48em;}
 	.howto{height:500px; background:url("img/howto_v.png")bottom center no-repeat;background-size:auto;}
@@ -43,7 +44,8 @@ footer a.terms{font-size:80%;color:#fff;}
 @media screen and (max-width: 800px){
 	#logo{padding:15px 20px 15px 10em;left:-7em;}
 	.howto{background-size:contain;}
-	#wrap_inner,#inner{width:98%;}
+	#wrap_inner{width:98%;}
+	.myinner{width:98%;}
 }
 
 /********Registration modal**********/
