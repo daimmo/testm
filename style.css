@@ -22,7 +22,7 @@ span.h1span{font-size:0.85em;}
 .howto{height:130px; background:url("img/howto.png")bottom center no-repeat;}
 .howto p{visibility: hidden;}
 /*footer*/
-footer{padding:40px 0;color:#fff;font-family: 'Open Sans', sans-serif;font-size:17px;text-align: center;}
+footer{padding:40px 0; color:#fff; font-family: 'Open Sans', sans-serif; font-size:15px; text-align: center;}
 footer p{width:80%;margin:0 auto;padding:10px 0;}
 footer ul{margin:10px 0;display: block;}
 footer li{display:inline-block;padding:5px 10px;}
@@ -31,7 +31,7 @@ footer a.terms{font-size:80%;color:#fff;}
 
 #termsText {display:none; font-size: 14px;text-align: left;color: #efefef;}
 
-/********Mediaqueries**********/
+/********Media queries**********/
 
 @media screen and (max-width: 480px){
 	#logo{padding:15px 20px 15px 10em;left:-7em;}
