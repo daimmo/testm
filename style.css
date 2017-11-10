@@ -32,19 +32,22 @@ h1{font-size:9em;display: block;text-align: center;color: #f0a202; line-height: 
 span.h1span{font-size:0.85em;}
 /*registration button*/
 .register{text-align: center;padding-bottom: 30px;}
-.register button{width:266px;background:#f0a202;border:1px solid #fff;font-size:40px;color:#fff;cursor:pointer;padding:3px 10px;}
+.register button{box-shadow: 3px 3px 10px 0px #333;width:266px;background:#f0a202;border:1px solid #fff;font-size:40px;color:#fff;cursor:pointer;padding:3px 10px;font-weight: bold;}
 /*registration order*/
 .howto{height:130px; background:url("img/howto.png")bottom center no-repeat;}
 .howto p{visibility: hidden;}
 /*footer*/
 footer{padding:40px 0; color:#fff; font-family: 'Open Sans', sans-serif; font-size:15px; text-align: center;}
 footer p{width:80%;margin:0 auto;padding:10px 0;}
-footer ul{margin:10px 0;display: block;}
+footer ul{padding:10px 0;display: block;}
 footer li{display:inline-block;padding:5px 10px;}
 footer p.smaller{font-size:90%;}
 footer a.terms{font-size:80%;color:#fff;}
-.aams18Bottom{visibility: hidden;}
+.aams18Bottom{display: none;}
 #termsText {display:none; font-size: 14px;text-align: left;color: #efefef;}
+#termsTextMobile{text-align: left;}
+#termsLinkMobile, #termsTextMobile{display: none;}
+#termsLink p {margin-bottom: 10px;}
 
 /********Media queries**********/
 @media screen and (max-width: 380px){
@@ -60,9 +63,11 @@ footer a.terms{font-size:80%;color:#fff;}
 	span.h1span {font-size: 0.48em;}
 	.howto{height:500px; background:url("img/howto_v.png")bottom center no-repeat;background-size:auto;width:96%; margin:0 auto;}
 	span.aams18Top{visibility:hidden;}
-	.aams18Bottom{visibility: visible;text-align: center;background:#595959;padding:10px;}
+	.aams18Bottom{display: block;text-align: center;background:#595959;padding:10px;}
 	#main{background-size:auto;}
 	footer p.smaller{background: #595959;width: auto;padding:10px;}
+	#termsLink {display: none;}
+	#termsLinkMobile{display: block;}
 	
 }
 @media screen and (max-width: 800px){
