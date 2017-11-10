@@ -42,9 +42,9 @@
 
 
 			$.validator.addMethod( "nameSurname", function( value, element ) {
-				return this.optional( element ) || /[^a-zA-ZÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ]/.test( value );
+				return this.optional( element ) || /^[a-zA-ZÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ][a-zA-Z'ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ ]*$/.test( value );
 			}, "Carattere non valido" );
-
+			
 			$('#registrationForm').validate({
 				errorPlacement: function(error, element) {         
 					error.insertBefore(element);
@@ -55,13 +55,17 @@
 						required: true
 					},
 					firstname: {
-						required: true
+						required: true,
+						nameSurname: true
 					},
 					lastname: {
-						required: true
+						required: true,
+						nameSurname: true
 					},
 					email: {
-						required: true
+						required: true,
+						email: true,
+						maxlength: 55
 					},
 					phone: {
 						required: true,
@@ -80,7 +84,8 @@
 					},
 					email: {
 						required: "Inserire l'email",
-						email: "Inserire un indirizzo di email valido"
+						email: "Inserire un indirizzo di email valido",
+						maxlength: "Massimo 55 caratteri"
 					},
 					phone: {
 						required: "Inserire il numero di telefono",
