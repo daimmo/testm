@@ -2,13 +2,23 @@
 
 
 /********Actionbox**********/
-#wrap{margin:0 auto;padding:0;display: block;position:relative;width:100%;font-size: 1em;}
-#box {display: block; margin:9em 38em;background:#efefef;padding:20px;font-family: 'Open Sans', sans-serif;width:auto;}	
-form div{padding:10px 0;}
-label{text-align:left;display: block;width: 200px;float:left;}
-form input{padding:10px;border:1px solid ##6C6C6C;font-size:14px; min-width: 250px;}
-form input.submit{padding:10px 20px;font-weight: bold;border:1px solid #828282; font-size:1.5em;background:#C70003; color:#fff; border-radius: 5px; min-width: auto; }
-form input.submit:hover{cursor:pointer; background:#D90205;}	
-#box .buttonwrap{text-align: center;display: block;}
+body  { background:#efefef;font-family: 'Open Sans', sans-serif;}	
 
-select#category{min-width: 273px;padding: 10px 5px;font-size: 14px;}
+#wrap{margin:0 auto;padding:0; }
+#box {  background:#efefef; }	
+
+
+form div{padding:10px 0;}
+#registrationForm {padding: 5px}
+#registrationForm input{padding:10px;border:1px solid ##6C6C6C; font-size:14px; min-width: 250px;}
+#registrationForm button {
+    font-size:14px; 
+    padding:10px 20px;
+    font-weight: bold;
+    border:1px solid #828282; 
+    background:#C70003; 
+    color:#fff; 
+    min-width: auto; }
+#registrationForm button:hover { background:#D90205;}	
+
+#registrationForm select {min-width: 273px;padding: 10px 5px;font-size: 14px;}
