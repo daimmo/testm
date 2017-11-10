@@ -1,6 +1,6 @@
 ### Start with test.html
 
-- You can see it online at http://uxw.org/testm/test.html
+- Work in progress is at http://uxw.org/testm2/test.html
 
 (on chrome, you may want to press F12 and then "Empty cache and hard reload")
 
