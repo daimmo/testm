@@ -1,16 +1,20 @@
 @charset "utf-8";
 
-
 /********Actionbox**********/
 body  { background:#efefef;font-family: 'Open Sans', sans-serif;}	
 
 #wrap{margin:0 auto;padding:0; }
-#box {  background:#efefef; }	
-
+#box {  background:#efefef; text-align: center; }	
+#box h2{text-align: center;}
 
 form div{padding:10px 0;}
-#registrationForm {padding: 5px}
-#registrationForm input{padding:10px;border:1px solid ##6C6C6C; font-size:14px; min-width: 250px;}
+/**#registrationForm {padding: 5px}**/
+#registrationForm input{
+    padding:10px;
+    border:1px solid ##6C6C6C;
+    font-size:14px;
+    width:86%; margin-bottom:10px;
+}
 #registrationForm button {
     font-size:14px; 
     padding:10px 20px;
@@ -21,4 +25,4 @@ form div{padding:10px 0;}
     min-width: auto; }
 #registrationForm button:hover { background:#D90205;}	
 
-#registrationForm select {min-width: 273px;padding: 10px 5px;font-size: 14px;}
+#registrationForm select {padding: 10px;width: 90%;margin-bottom:10px; font-size: 14px;}

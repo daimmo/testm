@@ -9,23 +9,11 @@ html{padding:0;margin:0;border:0;}
 
 /* sticky footer */
 
-html {
-	height: 100%;
-  }
-  body {
-	min-height: 100%;
-	min-width: 100%;
-	display: table;
-  }
+html { height: 100%; }
+body { min-height: 100%; min-width: 100%; display: table; }
 
-#outer {
-	display: table-row-group;
-  }
-  footer {
-	display: table-footer-group;
-  }
-  
-  
+#outer { display: table-row-group; }
+footer { display: table-footer-group; }
 
 /* *** */
 
@@ -55,35 +43,40 @@ footer ul{margin:10px 0;display: block;}
 footer li{display:inline-block;padding:5px 10px;}
 footer p.smaller{font-size:90%;}
 footer a.terms{font-size:80%;color:#fff;}
-span.aams18Bottom{visibility: hidden;}
+.aams18Bottom{visibility: hidden;}
 #termsText {display:none; font-size: 14px;text-align: left;color: #efefef;}
 
 /********Media queries**********/
+@media screen and (max-width: 380px){
+	h1{font-size:6em;}
+	span.h1span {font-size: 0.5em;}
 
+}
 @media screen and (max-width: 480px){
 	#logo{padding:15px 20px 15px 10em;left:-7em;}
-	#wrap_inner{width:98%;}
-	.myinner{width:98%;}
+	#wrap_inner{width:100%;}
+	.myinner{width:100%;}
 	h1{font-size:7em;}
 	span.h1span {font-size: 0.48em;}
-	.howto{height:500px; background:url("img/howto_v.png")bottom center no-repeat;background-size:auto;}
+	.howto{height:500px; background:url("img/howto_v.png")bottom center no-repeat;background-size:auto;width:96%; margin:0 auto;}
 	span.aams18Top{visibility:hidden;}
-	span.aams18Bottom{visibility: visible;text-align: center;}
+	.aams18Bottom{visibility: visible;text-align: center;background:#595959;padding:10px;}
 	#main{background-size:auto;}
+	footer p.smaller{background: #595959;width: auto;padding:10px;}
 	
 }
 @media screen and (max-width: 800px){
 	#logo{padding:15px 20px 15px 10em;left:-7em;}
-	.howto{background-size:contain;}
-	#wrap_inner{width:98%;}
-	.myinner{width:98%;}
+	.howto{background-size:contain;width:96%; margin:0 auto;}
+	#wrap_inner{width:100%;}
+	.myinner{width:100%;}
 	span.h1span {font-size: 0.6em;}
 	#main{background-size:auto;}
 	
 }
 @media screen and (max-width: 1200px){
-	.howto{background-size:contain;}
-	#wrap_inner{width:98%;}
-	.myinner{width:98%;}
+	.howto{background-size:contain;width:96%; margin:0 auto;}
+	#wrap_inner{width:100%;}
+	.myinner{width:100%;}
 	#main{background-size:auto;}
 }
