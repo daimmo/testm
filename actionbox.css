@@ -15,7 +15,7 @@ form div{padding:10px 0;}
     font-size:14px;
     width:86%; margin-bottom:10px;
 }
-#registrationForm button {
+#registrationForm button, button {
     font-size:14px; 
     padding:10px 20px;
     font-weight: bold;
@@ -23,6 +23,6 @@ form div{padding:10px 0;}
     background:#C70003; 
     color:#fff; 
     min-width: auto; }
-#registrationForm button:hover { background:#D90205;}	
+#registrationForm button:hover, button:hover { background:#D90205;}	
 
 #registrationForm select {padding: 10px;width: 90%;margin-bottom:10px; font-size: 14px;}
