@@ -28,7 +28,7 @@
 	</div>
 	</div>
 	
-	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 
 	<script>
@@ -36,8 +36,10 @@
 		$(document).ready(function() {
 
 			$('#closeModal').on('click', function(){
- 				 //console.log($(this).parent);
- 				 parent.$.fancybox.close();
+				$("#registrationForm").submit(function(e){
+        			e.preventDefault();
+    			});
+				parent.jQuery.fancybox.close();
  			});
 
 
